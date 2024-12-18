@@ -6,3 +6,13 @@ jobs:
         steps:
             - name: "greet user"
               run: echo "Hello, World!"
+    test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Get code
+              run: |
+                echo "Cloning repo..."
+                echo "${{toJson(github)}}"
+                git clone https://github.com/${{github.repository}}.git
+
+
