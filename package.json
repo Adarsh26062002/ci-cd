@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://Adarsh26062002.github.io/ci-cd",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
