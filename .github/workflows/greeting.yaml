@@ -1,5 +1,15 @@
 name: Greeting
-on: [push,workflow_dispatch]
+on: 
+  push:
+    branches:
+      - main
+      - 'feature/**'
+    paths-ignore:
+      - '**/node_modules/**'
+      - '**/dist/**'
+      - '**/build/**'
+      - '.github/**'
+  workflow_dispatch:
 jobs:
     greet:
         runs-on: ubuntu-latest
